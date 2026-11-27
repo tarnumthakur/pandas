@@ -1,0 +1,102 @@
+# import matplotlib.pyplot as plt
+# X= [1,2,3,4,5]
+# Y= [2,4,6,8,10]
+# plt.barh(X, Y)
+# plt.title("Numbers data")
+# plt.xlabel("X values")
+# plt.ylabel("Y values")
+# plt.show()
+# plt.scatter(X, Y)
+# plt.title("Numbers data")  
+# plt.xlabel("X values")
+# plt.ylabel("Y values")
+# plt.show()
+# plt.pie(X,Y)
+# plt.title("Numbers data")
+# plt.show()
+# plt.hist(X,Y)
+# plt.title("Numbers data")
+# plt.xlabel("X values")
+# plt.ylabel("Y values")
+# plt.show()
+# plt.boxplot(X)
+# plt.title("Numbers data")
+# plt.xlabel("X values")
+# plt.ylabel("Y values")
+# plt.show()  
+# plt.errorbar(X,Y)
+# plt.title("Numbers data")
+# plt.xlabel("X values")      
+# plt.ylabel("Y values")
+# plt.show()
+
+
+
+# import matplotlib.pyplot as plt
+# X= [1,2,3,4,5]
+# Y= [2,4,6,8,10]  
+# X1= ["Gunika","Upasana","Zoya","Diksha"]
+# Y1= ["Tarnum","Anchit","Bindas","Aakriti"]           
+# plt.plot(X, Y,marker="o",color="red",linestyle="--",linewidth=2,label="numbers data")
+# plt.title("Str data")
+# plt.xlabel("X numbers")
+# plt.ylabel("Y numbers")
+# plt.grid(True)
+# plt.legend()
+# plt.show()
+
+
+# fig,axes=plt.subplots(1,2)
+# axes[0].plot(X,Y)
+# axes[1].bar(X1,Y1)
+# plt.show()
+
+# import matplotlib.pyplot as plt
+# months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+#           "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+# sales = [120, 150, 180, 140, 200, 250,
+#          220, 280, 300, 260, 320, 350]
+# expenses = [80, 100, 110, 90, 130, 150,
+#             140, 160, 180, 170, 190, 210]
+# profit = [40, 50, 70, 50, 70, 100,
+#           80, 120, 120, 90, 130, 140]
+
+# fig, ax = plt.subplots(1,2)
+# ax[0].plot(months, sales)
+# ax[1].plot(months, expenses)
+# plt.show()
+# fig, ax = plt.subplots(2,2)
+# ax[0,0].plot(months,sales, color='blue',label="Sales", marker="o")
+# ax[0,1].plot(months,expenses,color='red',label="Expenses",marker="x")
+# ax[1,0].plot(months,sales,color='green',label="Sales", marker="s")
+# ax[1,1].plot(months,profit,color='purple',label="Profit",marker="o")
+# ax[0,0].legend()
+# ax[0,1].legend()
+# ax[1,0].legend()
+# ax[1,1].legend()
+# fig.savefig("sales_expenses_profit.png")
+# plt.show()
+
+# import numpy as np
+# X = np.arange(0,50,1)
+# Y = X*5
+# print(Y)
+
+# plt.bar(X,Y)
+# plt.show()
+
+import matplotlib.pyplot as plt
+data = {
+ "Month": ["Jan", "Feb", "Mar", "Apr"],
+ "Sales": [120, 150, 135, 180],
+ "Expenses": [80, 95, 90, 110]
+}
+# plt.plot(data["Month"],data["Sales"])
+# plt.show()
+# plt.plot(data["Month"],data["Expenses"],label= 'Sales')
+# plt.legend()
+# plt.show()
+fig,axes = plt.subplots(2,4)
+axes[0].plot("Month","Sales")
+axes[1].plot("Month", "Expenses")
+plt.show()   
